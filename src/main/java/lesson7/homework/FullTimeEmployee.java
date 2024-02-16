@@ -1,22 +1,17 @@
 package lesson7.homework;
 
 
-class FullTimeEmployee {
-    private String name;
-    private int experience;
+class FullTimeEmployee extends Employee {
+
     private double salary;
 
     public FullTimeEmployee(String name, int experience, double salary) {
-        this.name = name;
-        this.experience = experience;
+        super(name, experience);
         this.salary = salary;
     }
 
-    public int getExperience() {
-        return experience;
-    }
-
-    public double getSalary() {
+    @Override
+    public double calculateSalary() {
         return salary;
     }
 }
