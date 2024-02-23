@@ -10,6 +10,6 @@ class CreditCardPaymentStrategy implements PaymentStrategy {
     public void pay(int amount) {
         System.out.print("Paying with credit card: ");
         creditCard.getInfo();
-        System.out.println("Amount paid: $" + amount);
+        System.out.println("Amount paid: ₼" + amount);
     }
 }
